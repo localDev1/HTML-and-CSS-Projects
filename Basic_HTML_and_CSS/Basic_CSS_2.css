@@ -7,3 +7,8 @@ p {
 	text-decoration: underline;
 	font-style: italic;
 }
+
+h2 
+{
+	text-shadow : yellow 0 -2px;
+}
