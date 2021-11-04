@@ -1,44 +1,58 @@
 <!DOCTYPE html>
-<html>
+<html lang ="en">
 	<head>
-		<title>ONE-PAGE WEBSITE ASSIGNMENT</title>
+		<title>PET STORE!!</title>
+		<link rel="shortcut icon" type="image/jpg" href=".\images\Thumb\favicon.ico"/>
+		<meta charset = "utf-8">		
+		<link rel="stylesheet" href=".\css\one_page_website.css"/>
+		<link rel="stylesheet" href=".\css\animations.css"/>
 		
 	</head>
 	
 	<body>
-	
 		<header>
-			<h1>PET STORE</h1>
-			<p> TYPE OF PETS.</p>
+			
+			
+			
 		</header>
-		
+
 		<!-- NAV -->
-		<div>
-			<div>
-				<ul>
+		<div class="wrap">
+			<div class="menu-container">
+				<ul class="menu" >
 					<a href = "#home" id ="link"> <li> HOME</li></a>
-					<a href = "#gallery"><li>PHOTO GALLERY</li></a>
-					<a href = "#videos"><li>VIDEO GALLERY</li></a>					
+					<a href = "#gallery"><li> PHOTO GALLERY</li></a>
+					<a href = "#videos"><li> VIDEO GALLERY</li></a>
 					<a href = "#contact"><li> CONTACT</li></a>
 				</ul>
 			</div>
 		</div>
+		<!-- END NAV -->
 		
+		<!-- HOME -->
+		<div id = "home">
+			<div class="container">
+				<div class="text-center">
+					<span class="head-main">PET STORE</span>					
+				</div>
+			</div>
+		</div>
+		<!-- END HOME -->
 		
 		<!-- GALLERY -->
 		
-		<section>
-			<div id ="gallery">
+		<section id ="gallery">
+			<div class="container">
 				<h1>PHOTO GALLERY</h1>				
-				<div>
-				
+				<div class="flex-container">		
+
 					<!--PHOTO CONTAINER 1-->
-					<div>
-						<div>
+					<div class="photo-container">
+						<div class="photo">
 							<img src = ".\images\image1.jpg" alt="there is a problem with the image 1">
-							<div>
-								<h1>Click to Enlarge</h1>
-								<p>We have several kind of pets</p>			
+							<div class="photo-overlay">
+								<h3>Click to Enlarge</h3>
+								<p>We have several beautiful pets!!!</p>			
 							</div>											
 						</div>											
 					</div>
@@ -46,65 +60,68 @@
 					
 					
 					<!--PHOTO CONTAINER 2-->
-					<div>
-						<div>
+					<div class="photo-container">
+						<div class="photo">
 							<img src = ".\images\image2.jpg" alt="there is a problem with the image 2">
-							<div>
-								<h1>Click to Enlarge</h1>
-								<p>We have several kind of pets</p>			
+							<div class="photo-overlay">
+								<h3>Click to Enlarge</h3>
+								<p>We have several beautiful pets!!!</p>			
 							</div>											
 						</div>											
 					</div>
 					<!--END PHOTO CONTAINER 2-->
 					
 					<!--PHOTO CONTAINER 3-->
-					<div>
-						<div>
+					<div class="photo-container">
+						<div class="photo">
 							<img src = ".\images\image3.jpg" alt="there is a problem with the image 3">
-							<div>
-								<h1>Click to Enlarge</h1>
-								<p>We have several kind of pets</p>			
+							<div class="photo-overlay">
+								<h3>Click to Enlarge</h3>
+								<p>We have several beautiful pets!!!</p>			
 							</div>											
 						</div>											
 					</div>
 					<!--END PHOTO CONTAINER 3-->
 					
 					<!--PHOTO CONTAINER 4-->
-					<div>
-						<div>
+					<div class="photo-container">
+						<div class="photo">
 							<img src = ".\images\image4.jpg" alt="there is a problem with the image 4">
-							<div>
-								<h1>Click to Enlarge</h1>
-								<p>We have several kind of pets</p>			
+							<div class="photo-overlay">
+								<h3>Click to Enlarge</h3>
+								<p>We have several beautiful pets!!!</p>			
 							</div>											
 						</div>											
 					</div>
 					<!--END PHOTO CONTAINER 4-->
 					
 					<!--PHOTO CONTAINER 5-->
-					<div>
-						<div>
+					<div class="photo-container">
+						<div class="photo">
 							<img src = ".\images\image5.jpg" alt="there is a problem with the image 5">
-							<div>
-								<h1>Click to Enlarge</h1>
-								<p>We have several kind of pets</p>			
+							<div class="photo-overlay">
+								<h3>Click to Enlarge</h3>
+								<p>We have several beautiful pets!!!</p>			
 							</div>											
 						</div>											
 					</div>
-					<!--END PHOTO CONTAINER 5-->					
+					<!--END PHOTO CONTAINER 5-->
+
+					
 					
 				</div>
 			</div>		
 		</section>
+
+		<!--END GALLERY-->
 		
 		<section>
 			<div id ="videos">
-				<h1>VIDEO GALLERY</h1>				
-				<div>
-				
+				<h1>VIDEO GALLERY</h1>		
+				<div>				
 					<!--video CONTAINER 1-->
-					<div>
-						<div>
+					<div class="container"> 
+						<div style="text-align: center;">
 							<iframe width="420" height="345" src="https://www.youtube.com/embed/Y_yy8ACm5VA">
 							</iframe>		
 						</div>											
@@ -113,8 +130,8 @@
 					
 					
 					<!--video CONTAINER 2-->
-					<div>
-						<div>
+					<div class="container">
+						<div style="text-align: center;">
 							<iframe width="420" height="345" src="https://www.youtube.com/embed/LuqWn3IFA2Y">
 							</iframe>											
 						</div>											
@@ -125,25 +142,31 @@
 				</div>
 			</div>		
 		</section>
+
+
+
 		
-		<section>
-			<div id="contact">						
-				<div>
-					<h1>Contact</h1>					
-					<div>						
-						<p>Please provide us with your basic contact information</p>
-						<div>
-							<form action = "" method="post">
-								
-								<input class="rsvp" type ="text" value="First Name: "><br>
-								<input class="rsvp" type ="text" value="Last Name: "><br>
-								<input class="rsvp" type ="text" value="Email address: "><br>
-								<input class="rsvp" type ="text" value="Phone Number: "><br>
-								<input class="rsvp" type ="text" value="Type of Pet: "><br><br>
-								<input type="submit" name="submit" >
+		<!-- RSVP -->
+		
+		<section id="contact">
+			<div class="container">						
+				<div class="heading-padding">
+					<h1 class="heading-padding">Contact</h1>					
+					<div class="reservation">
+						<h2><span>Please provide us with your basic contact information</span></h2>
 							
+						
+						<div class="form-rsvp">
+							<form action = "" method="post">
+								<input class="rsvp" type ="text" value="" placeholder="First Name">
+								<input class="rsvp" type ="text" value="" placeholder="Last Name">
+								<input class="rsvp" type ="text" value="" placeholder="Email address">
+								<input class="rsvp" type ="text" value="" placeholder="Phone Number">
 								<div class="form-spacer">
-									<label class="terms">Terms and Conditions</label>									
+									<label class="terms">Terms and Conditions</label>
+								</div>
+								<div class="submit">
+									<input type="submit" value="Submit">
 								</div>
 							</form>
 						</div>											
@@ -152,18 +175,14 @@
 			</div>		
 		</section>
 		
+		<!-- END RSVP -->
 		
-		
-		<!-- FOOTER -->
-		
-		<div>
+		<!-- FOOTER -->		
+		<div id="footer">
 			www.petsinportland.com &nbsp;|&nbsp; &copy; 2021
-		</div>
-		<p>EM TAG ASSIGNMENT</p>
-		<a href="https://petsonbroadway.com/" target="new"><em> Another page </em></a>
-		
-		
-		
-	
+		</div>		
+		<a href="https://petsonbroadway.com/" target="new"><em> More Pets </em></a>
+		<!-- END FOOTER -->	
+
 	</body>
 </html>
